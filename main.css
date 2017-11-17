@@ -1,0 +1,46 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.container {
+	width: 600px;
+	height: 600px;
+	margin: 20px auto;
+	box-shadow: 0 0 8px;
+	border-radius: 4px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.box {
+	width: 100px;
+	height: 100px;
+
+	box-sizing: border-box;
+	border: 1px solid #eee;
+	float: left;
+	box-shadow: 0 0 5px;
+	position: relative;
+	overflow: hidden;
+}
+.back {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	text-align: center;
+	line-height: 100px;
+	font-size: 48px;
+	color: hsl(67, 87%, 63%);
+	text-shadow: 2px 2px 2px darkslategray,-2px -2px 2px darkslategray;
+	background: tomato;
+	backface-visibility: hidden;
+	transform: perspective(900px) rotateY(180deg);
+	transition: all 0.7s;
+}
+.front {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background: cadetblue;
+	backface-visibility: hidden;
+	transition: all 0.7s;
+}
